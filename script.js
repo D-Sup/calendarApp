@@ -20,7 +20,7 @@ function load() {
           switchDirection = '0';
           scaleEffect(background, e);
         } else {
-          const background = 'url(./images/cover03.png) 0% 0% / cover';
+          const background = 'url(./images/cover03.png) 100% 100% / cover';
           switchDirection = '-1';
           windowEffect(background, e);
         }
