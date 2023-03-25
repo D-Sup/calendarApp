@@ -2,7 +2,7 @@
 
 [url](https://d-sup.github.io/calendarApp/)
 
-##Preview
+# Preview
 
 ![new2](https://user-images.githubusercontent.com/96939334/227711591-7a9fbf27-c66f-43a8-9fb3-1de015d3f2e9.gif)
 
