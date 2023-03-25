@@ -2,12 +2,28 @@ const toggle = document.querySelectorAll('.toggle');
 const section_contents = document.querySelector('.section-contents');
 const card_cover = document.querySelectorAll('.card-cover');
 const card_soldout = document.querySelector('.card-soldout');
+const msg = document.querySelector('.msg');
 
 let switchDirection = '0';
+let change = 1;
 
+function timer() {
+  change = !change;
+  console.log(change);
+  if (change) {
+    msg.style.color = '#f1e0f8';
+    msg.style.transform = 'scale(1.3)';
+  } else {
+    msg.style.color = '#fff';
+    msg.style.transform = 'scale(1)';
+  }
+}
 function load() {
+  let interval = setInterval(timer, 800);
   toggle.forEach(toggle => {
     toggle.addEventListener('click', e => {
+      msg.style.opacity = '0';
+      clearInterval(interval);
       if (window.innerWidth > 1300) {
         eventBlock(true);
         const toggle_index = e.currentTarget.dataset.id;
@@ -20,7 +36,7 @@ function load() {
           switchDirection = '0';
           scaleEffect(background, e);
         } else {
-          const background = 'url(./images/cover03.png) 100% 100% / cover';
+          const background = 'url(./images/cover03.png) 100% 0% / cover';
           switchDirection = '-1';
           windowEffect(background, e);
         }

@@ -123,6 +123,16 @@ body {
 
 /* toggle */
 
+.msg {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 900;
+  transition: color 0.3s, transform 1s, opacity 1s;
+}
+
 .toggle {
   position: absolute;
   left: -1;
