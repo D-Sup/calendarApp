@@ -1,3 +1,3 @@
 # calendarApp
 
-**[url](https://d-sup.github.io/calendarApp/)**
+[url](https://d-sup.github.io/calendarApp/)
